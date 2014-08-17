@@ -10,6 +10,7 @@
 #include "GameManager.h"
 #include "List.h"
 #include "GameManagerObject.h"
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
@@ -29,6 +30,19 @@ int main(int argc, const char * argv[])
 //	gm->processManager();
 //	
 //	gm->stopManager();
+	
+	List<int>* myList = new List<int>();
+	
+	myList->addNode(new int(100));
+	myList->addNode(new int(100));
+	myList->addNodeAt(new int(100), 1);
+	
+	myList->deleteNodeAt(1);
+	
+	cout << myList->count() << endl;
+	
+//	for(int i = 0; i < myList->count(); i++)
+//		cout << "ITEM " << i << " " << myList->get(i) << endl;
 
     return 0;
 }

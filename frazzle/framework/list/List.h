@@ -19,8 +19,8 @@ public:
 	void addNodeAt(T*, int);
 	void deleteNode(T*);
 	void deleteNodeAt(int);
-	void getNode(int);
-	void count();
+	T get(int);
+	int count();
 	
 	List();
 private:
@@ -87,5 +87,106 @@ void List<T>::addNodeAt(T* obj, int pos){
 	}
 }
 
+template <typename T>
+void List<T>::deleteNodeAt(int pos){
+	if(start == nullptr)
+		return;
+	
+	ListNode<T> *temp, *q;
+	q = start;
+	
+	if(pos == 0){
+		temp = start;
+		start = start->next;
+		start->prev = nullptr;
+		free(temp);
+		return;
+	}
+	
+	q = start;
+	
+	for(int i = 0; i < pos - 1; i++){
+		if(q->next == nullptr)
+			break;
+		q = q->next;
+	}
+	
+	if(q->next != nullptr){
+		temp = q->next;
+		q->next = temp->next;
+		temp->next->prev = q;
+		free(temp);
+		return;
+	}
+}
 
+template <typename T>
+void List<T>::deleteNode(T *obj){
+	if(start == nullptr)
+		return;
+	
+	ListNode<T> *temp, *q;
+	
+	if(start->value == obj){
+		temp = start;
+		start = start->next;
+		start->prev = nullptr;
+		free(temp);
+		return;
+	}
+	
+	q = start;
+	
+	while(q->next->next != nullptr){
+		if(q->next->value == obj){
+			temp = q->next;
+			q->next = temp->next;
+			temp->next->prev = q;
+			free(temp);
+			return;
+		}
+		q = q->next;
+	}
+	
+	if(q->next->value == obj){
+		temp = q->next;
+		free(temp);
+		q->next = nullptr;
+		return;
+	}
+}
+
+template <typename T>
+int List<T>::count() {
+	ListNode<T> *q = start;
+	int count = 0;
+	
+	while(q != nullptr){
+		q = q->next;
+		count++;
+	}
+	
+	return count;
+}
+
+template <typename T>
+T List<T>::get(int pos){
+	if(pos == 0)
+		return start->value;
+	
+	ListNode<T> *q;
+	
+	q = start;
+	
+	for(int i = 0; i < pos - 1; i++){
+		if(q->next == nullptr)
+			return nullptr;
+		
+		q = q->next;
+	}
+	
+	if(q->next != nullptr)
+		return q->next->value;
+	return nullptr;
+}
 #endif
