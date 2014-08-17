@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  sentinels
+//  frazzle
 //
 //  Created by Zachary Breman on 8/14/14.
 //  Copyright (c) 2014 Zachary Breman. All rights reserved.

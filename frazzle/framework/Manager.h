@@ -1,13 +1,13 @@
 //
 //  Manager.h
-//  sentinels
+//  frazzle
 //
 //  Created by Zachary Breman on 8/14/14.
 //  Copyright (c) 2014 Zachary Breman. All rights reserved.
 //
 
-#ifndef sentinels_Manager_h
-#define sentinels_Manager_h
+#ifndef frazzle_Manager_h
+#define frazzle_Manager_h
 
 #include "List.h"
 

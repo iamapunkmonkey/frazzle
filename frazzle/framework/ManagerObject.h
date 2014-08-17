@@ -1,13 +1,13 @@
 //
 //  Header.h
-//  sentinels
+//  frazzle
 //
 //  Created by Zachary Breman on 8/14/14.
 //  Copyright (c) 2014 Zachary Breman. All rights reserved.
 //
 
-#ifndef sentinels_Header_h
-#define sentinels_Header_h
+#ifndef frazzle_Header_h
+#define frazzle_Header_h
 
 class ManagerObject
 {

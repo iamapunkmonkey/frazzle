@@ -1,13 +1,13 @@
 //
 //  List.h
-//  sentinels
+//  frazzle
 //
 //  Created by Zachary Breman on 8/14/14.
 //  Copyright (c) 2014 Zachary Breman. All rights reserved.
 //
 
-#ifndef sentinels_List_h
-#define sentinels_List_h
+#ifndef frazzle_List_h
+#define frazzle_List_h
 
 #include "ListNode.h"
 

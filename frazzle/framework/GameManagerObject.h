@@ -1,13 +1,13 @@
 //
 //  GameManagerObject.h
-//  sentinels
+//  frazzle
 //
 //  Created by Zachary Breman on 8/14/14.
 //  Copyright (c) 2014 Zachary Breman. All rights reserved.
 //
 
-#ifndef __sentinels__GameManagerObject__
-#define __sentinels__GameManagerObject__
+#ifndef __frazzle__GameManagerObject__
+#define __frazzle__GameManagerObject__
 
 #include "ManagerObject.h"
 
