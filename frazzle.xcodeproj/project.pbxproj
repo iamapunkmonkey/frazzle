@@ -70,6 +70,7 @@
 		FCD187A819A054E100873124 /* frazzle */ = {
 			isa = PBXGroup;
 			children = (
+				FCD187BE19A05FEF00873124 /* game */,
 				FCD187B219A0553D00873124 /* framework */,
 				FCD187A919A054E100873124 /* main.cpp */,
 				FCD187AB19A054E100873124 /* frazzle.1 */,
@@ -98,6 +99,13 @@
 				FCD187B919A0553D00873124 /* ListNode.h */,
 			);
 			path = list;
+			sourceTree = "<group>";
+		};
+		FCD187BE19A05FEF00873124 /* game */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = game;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +271,7 @@
 				FCD187B119A054E100873124 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

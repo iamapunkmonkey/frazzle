@@ -23,7 +23,6 @@ public:
 	int count();
 	
 	List();
-private:
 	ListNode<T>* start;
 };
 

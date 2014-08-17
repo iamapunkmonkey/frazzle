@@ -15,26 +15,26 @@ void GameManager::initManager()
 
 void GameManager::startManager()
 {
-//    isRunning = true;
-//	
-//	ListNode<ManagerObject>* ptr = managerList->getStartNode();
-//	
-//	while (ptr != nullptr) {
-//		ptr->getData()->InitObject();
-//		ptr = ptr->getNextPointer();
-//	}
+    isRunning = true;
+	
+	ListNode<ManagerObject>* ptr = managerList->start;
+	
+	while (ptr != nullptr) {
+		ptr->value->InitObject();
+		ptr = ptr->next;
+	}
 }
 
 void GameManager::processManager()
 {
-//    if (!isRunning) return;
-//	
-//	ListNode<ManagerObject>* ptr = managerList->getStartNode();
-//	
-//	while (ptr != nullptr) {
-//		ptr->getData()->ProcessObject();
-//		ptr = ptr->getNextPointer();
-//	}
+    if (!isRunning) return;
+	
+	ListNode<ManagerObject>* ptr = managerList->start;
+	
+	while (ptr != nullptr) {
+		ptr->value->ProcessObject();
+		ptr = ptr->next;
+	}
 }
 
 void GameManager::stopManager()

@@ -34,7 +34,7 @@ void Manager<T>::initManager()
 
 template<typename T>
 void Manager<T>::insertObject(T* object, int priority){
-//	managerList->insertNewNode(object, priority);
+	managerList->addNodeAt(object, priority);
 }
 
 
